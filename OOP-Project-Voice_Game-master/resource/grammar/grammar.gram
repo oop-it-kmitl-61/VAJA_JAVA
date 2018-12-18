@@ -9,7 +9,12 @@ grammar grammar;
 
 
 
-public <tackle> = ( bat | rat | hat | bank | chef);
+public <tackle> = ( dog | ant | box | school | bank);
 
-public <water> = ( imagine | kiss | should | hate | yard);
+public <water> = ( night | study | flower | gun | clean);
+
+public <dragon> = ( cloud | movie | camera | pink | cry);
+
+public <scratch> = ( hotel | knowledge | zoo | danger | dance);
+
 

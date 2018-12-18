@@ -56,13 +56,36 @@ public class Battle implements BattleEventQueuer {
     
     
 
-	private String[] tackle = {"rat", "bat", "hat", "bank", "chef"}
-	, watergun = {"imagine", "kiss", "should", "hate", "yard"}, 
-			dragon, scratch;
+	private String[] tackle = {"dog", "ant", "box", "school", "bank"}
+	, watergun = {"night", "study", "flower", "gun", "clean"}, 
+			dragon = {"cloud", "movie", "camera", "pink", "cry"}
+	, scratch = {"hotel", "knowledge", "zoo", "danger", "dance"};
 	
 	private int index;
-	private String[] question_t = {"0", "1", "2", "3", "4"};
-	private String[] question_w = {"0", "1", "2", "3", "4"};
+	private String[] question_t = {"It’s a human loyalty friend, It can bark sound like woof woof."
+			, "It’s a small bug when it bites we get hurt a little bit."
+			, "It has a square shape we can put things in it."
+			, "Students have to go every day and it has a flagstaff."
+			, "If you want to deposit money. Where would you go?"};
+	
+	private String[] question_w = {"How do you call the time when it’s dark?"
+			, "We received knowledge from the teacher when we … ?"
+			, "When you’re on the date, what do boys like to give you?\n"
+			, "When people shoot, what do they use?"
+			, "If the room is dirty, what should we do?"};
+	
+	private String[] question_d = {"You look into the sky in the daytime and what do you see?"
+			,"We went to the cinema to see what?"
+			,"What do you use to take a picture?"
+			,"What is the color that girls like?"
+			,"When you feel sad, what’s your reaction?"};
+	
+	private String[] question_s = {"When you travel, you will stay at ….. ."
+			,"We read books so we will have .... ?"
+			,"Where do they have lots of animals?"
+			,"Walking alone in a dark alley. How do you feel?"
+			,"When you enjoy with music, What do you want to do?"
+	};
 
     private BattleEventPlayer eventPlayer;
 
@@ -180,11 +203,11 @@ public class Battle implements BattleEventQueuer {
         		
         			
         				queueEvent(new TextEvent(battleUser.getName()+" used\n"+move.getName().toUpperCase()+"!", 0.5f));
-                		this.index = rand.nextInt(4);
+                		this.index = rand.nextInt(5);
                 		
                 		
                 		JOptionPane.showMessageDialog(null, "Question:"+this.question_t[index]);
-                		JOptionPane.showMessageDialog(null, "Choice:"+" rat | bat | hat | bank | chef (Wait a second and speech)");
+                		JOptionPane.showMessageDialog(null, "Choice:"+" dog | ant | box | school | bank ");
                 		check++;
                 		
         			
@@ -202,11 +225,11 @@ public class Battle implements BattleEventQueuer {
         		
     			
 				queueEvent(new TextEvent(battleUser.getName()+" used\n"+move.getName().toUpperCase()+"!", 0.5f));
-        		this.index = rand.nextInt(4);
+        		this.index = rand.nextInt(5);
         		
         		
         		JOptionPane.showMessageDialog(null, "Question:"+this.question_w[index]);
-        		JOptionPane.showMessageDialog(null, "Choice:"+" imagine | kiss | should | hate | yard (Wait a second and speech)");
+        		JOptionPane.showMessageDialog(null, "Choice:"+" night | study | flower | gun | clean");
         		check++;
         		
 			
@@ -219,7 +242,48 @@ public class Battle implements BattleEventQueuer {
     		else num = -1;
 		}
 	}
-            
+        if(move.getName().equals("Ha do Ken!")) {
+        		
+    			
+				queueEvent(new TextEvent(battleUser.getName()+" used\n"+move.getName().toUpperCase()+"!", 0.5f));
+        		this.index = rand.nextInt(5);
+        		
+        		
+        		JOptionPane.showMessageDialog(null, "Question:"+this.question_d[index]);
+        		JOptionPane.showMessageDialog(null, "Choice:"+" cloud | movie | camera | pink | cry");
+        		check++;
+        		
+			
+		
+		if(check == 1) {
+			Recognizer recog = new Recognizer();
+			queueEvent(new TextEvent("This is Your answer:"+recog.getWord(), 0.8f));
+			queueEvent(new TextEvent("This is True answer:"+dragon[index], 0.8f));
+    		if(recog.getWord().equals(dragon[index])) num = 1;
+    		else num = -1;
+		}
+	}
+        if(move.getName().equals("Khame Khame Ha!")) {
+    		
+			
+			queueEvent(new TextEvent(battleUser.getName()+" used\n"+move.getName().toUpperCase()+"!", 0.5f));
+    		this.index = rand.nextInt(5);
+    		
+    		
+    		JOptionPane.showMessageDialog(null, "Question:"+this.question_s[index]);
+    		JOptionPane.showMessageDialog(null, "Choice:"+" hotel | knowledge | zoo | danger | dance");
+    		check++;
+    		
+		
+	
+	if(check == 1) {
+		Recognizer recog = new Recognizer();
+		queueEvent(new TextEvent("This is Your answer:"+recog.getWord(), 0.8f));
+		queueEvent(new TextEvent("This is True answer:"+scratch[index], 0.8f));
+		if(recog.getWord().equals(scratch[index])) num = 1;
+		else num = -1;
+	}
+}
             if (num == 1) {
                 move.useMove(mechanics, battleUser, monsTarget, user, this);
             } else { // miss
