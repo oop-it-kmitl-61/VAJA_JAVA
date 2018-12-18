@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="OOP-Project-Voice_Game-master/core/src"/>
+	<classpathentry kind="src" path="OOP-Project-Voice_Game-master/desktop/src"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/gradle/wrapper/gradle-wrapper.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-backend-lwjgl-natives.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-backend-lwjgl.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-freetype-natives.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-freetype.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-natives.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-sources.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx-tools.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/gdx.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/tween-engine-api-sources.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/lib/tween-engine-api.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/resource/libaries/sphinx4-core-5prealpha-20160628.232526-10.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/resource/libaries/sphinx4-data-5prealpha-20160628.232535-10.jar"/>
+	<classpathentry kind="lib" path="OOP-Project-Voice_Game-master/useful-docs/sphinx4-core-5prealpha-20160628.232526-10-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
