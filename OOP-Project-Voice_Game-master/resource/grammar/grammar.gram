@@ -1,0 +1,15 @@
+
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar
+ */
+
+grammar grammar;
+
+
+
+public <tackle> = ( bat | rat | hat | bank | chef);
+
+public <water> = ( imagine | kiss | should | hate | yard);
+

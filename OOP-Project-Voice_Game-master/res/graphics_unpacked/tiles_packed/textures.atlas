@@ -1,0 +1,132 @@
+
+textures.png
+size: 256,128
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+brendan_stand_east
+  rotate: false
+  xy: 84, 100
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: -1
+brendan_walk_east
+  rotate: false
+  xy: 84, 100
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 1
+brendan_stand_north
+  rotate: false
+  xy: 36, 18
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: -1
+brendan_walk_north
+  rotate: false
+  xy: 36, 18
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 1
+brendan_stand_south
+  rotate: false
+  xy: 84, 74
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: -1
+brendan_walk_south
+  rotate: false
+  xy: 84, 74
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 1
+brendan_stand_west
+  rotate: false
+  xy: 102, 100
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: -1
+brendan_walk_west
+  rotate: false
+  xy: 102, 100
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 1
+brendan_walk_east
+  rotate: false
+  xy: 54, 18
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 0
+brendan_walk_east
+  rotate: false
+  xy: 84, 48
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 2
+brendan_walk_north
+  rotate: false
+  xy: 102, 74
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 0
+brendan_walk_north
+  rotate: false
+  xy: 120, 100
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 2
+brendan_walk_south
+  rotate: false
+  xy: 102, 48
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 0
+brendan_walk_south
+  rotate: false
+  xy: 120, 74
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 2
+brendan_walk_west
+  rotate: false
+  xy: 138, 100
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 0
+brendan_walk_west
+  rotate: false
+  xy: 120, 48
+  size: 16, 24
+  orig: 16, 24
+  offset: 0, 0
+  index: 2
+large_tree
+  rotate: false
+  xy: 2, 2
+  size: 32, 40
+  orig: 32, 40
+  offset: 0, 0
+  index: -1
+small_house
+  rotate: false
+  xy: 2, 44
+  size: 80, 80
+  orig: 80, 80
+  offset: 0, 0
+  index: -1
